@@ -1,0 +1,317 @@
+/* Core Settings */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Jost:ital,wght@0,200;0,400;0,700;1,400&display=swap');
+
+html {
+    font-size: 24px;
+    font-family: 'Jost',
+        sans-serif;
+
+}
+
+body {
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: auto;
+    background: radial-gradient(759px at 50% 22.3%, 0%, 90%);
+    background: linear-gradient(109.6deg, rgb(15, 93, 45) 11.2%, rgb(15, 164, 102) 91.1%);
+}
+
+main {
+    background: linear-gradient(109.6deg, rgb(158, 212, 145) 11.2%, rgb(128, 251, 174) 91.1%);
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+main h2 {
+    margin-left: 15%;
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5rem;
+}
+
+h2 {
+    text-shadow: 1px 1px #fff;
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px #fff;
+}
+
+h4 {
+    font-size: 1.25rem;
+    text-shadow: 1px 1px #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #3e1a1a;
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+/* Header Section */
+header {
+    min-height: 30rem;
+    background-image: url("/resources/images/hero-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 3px solid greenyellow;
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+}
+
+header nav {
+    background-color: #ffffff44;
+}
+
+.links-ul {
+    display: flex;
+    justify-content: center;
+}
+
+.links-ul li {
+    padding: 1rem 2rem;
+}
+
+.links-ul a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFF;
+    text-shadow: 1px 1px #000;
+}
+
+.links-ul a:hover {
+    text-shadow: greenyellow 1px 0 10px;
+}
+
+.logo {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    order: 0;
+    height: 6rem;
+    width: 6rem;
+    padding-right: .5rem;
+}
+
+.logo h1 {
+    padding: 2rem 2rem;
+    line-height: 2rem;
+    background-color: rgba(83, 83, 0, 0.574);
+    order: 1;
+    border-radius: 0.5rem;
+    color: #fff;
+    text-shadow: greenyellow 1px 0 10px;
+    border: 2px solid greenyellow;
+}
+
+/* Mission Section */
+#mission {
+    padding: 3rem 0;
+}
+
+#mission h2 {
+    margin-bottom: 2rem;
+}
+
+#mission p {
+    max-width: 60%;
+    font-style: italic;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #3e1a1a;
+    color: #ffffff;
+    line-height: 1.8;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 2px solid greenyellow;
+}
+
+#mission strong {
+    color: greenyellow;
+}
+
+/* Services Section */
+#container-b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-b {
+    display: grid;
+    margin: 2em;
+}
+
+.port {
+    grid-template: 6em 16em / 14em 11em;
+    grid-template-areas: "img h3"
+        "img parag";
+}
+
+.land {
+    grid-template: 15em 7em / 9em 16em;
+    grid-template-areas: "img img"
+        "h3 parag";
+}
+
+.port img {
+    border-right: 2px solid greenyellow;
+}
+
+.land img {
+    border-bottom: 2px solid greenyellow;
+}
+
+.card-b img {
+    grid-area: img;
+    align-self: stretch;
+    justify-self: stretch;
+}
+
+.h3-div {
+    grid-area: h3;
+    height: 100%;
+    width: 100%;
+    background-color: #3e1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h3-div h3 {
+    text-align: center;
+    color: #fff;
+    text-shadow: greenyellow 1px 0 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.port .p-div {
+    align-items: flex-start;
+    text-align: center;
+}
+
+.land .p-div {
+    text-align: left;
+}
+
+.p-div {
+    grid-area: parag;
+    height: 100%;
+    background-color: #3e1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-div p {
+    /* text-align: center; */
+    color: #fff;
+    margin: 0;
+    padding: 0 1rem;
+    font-size: 1.1rem;
+}
+
+.p-div strong {
+    color: greenyellow;
+}
+
+.port p {
+    padding: 0 1rem;
+    line-height: 1.8;
+}
+
+/* About Us Section */
+.container-row {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.container-row h3 {
+    margin-bottom: .25rem;
+    padding: 0 2rem;
+    line-height: 1.5;
+}
+
+.container-row h4 {
+    font-weight: normal;
+    font-style: italic;
+    padding: .3rem;
+}
+
+figure img {
+    width: 10em;
+    height: 15em;
+    border-radius: 50%;
+    border: 3px solid greenyellow;
+}
+
+figcaption {
+    font-size: .5rem;
+}
+
+.many-span {
+    font-size: 1.6rem;
+    text-shadow: 2px 2px greenyellow;
+}
+
+#about-us h2 {
+    padding-top: 3rem;
+}
+
+.final-phrase {
+    line-height: 1.5;
+    padding: 3rem 3rem;
+    text-align: center;
+    text-shadow: 1px 1px #fff;
+    color: #3e1a1a;
+}
+
+/* Footer Section */
+footer {
+    background-color: #3e1a1a;
+    padding: 2rem;
+    border-top: 3px solid greenyellow;
+}
+
+.footer-div {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-div img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.footer-div h5,
+.footer-div h6 {
+    align-self: center;
+    padding: 0 .5rem;
+    color: #fff;
+}
